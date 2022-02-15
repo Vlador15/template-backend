@@ -12,6 +12,7 @@ const PORT = config.get("port");
 // controllers
 const authRouter = require("./routes/auth.routes");
 
+// middlewares
 app.use(cors());
 app.use(express.json());
 
@@ -27,4 +28,5 @@ const start = async () => {
   }
 };
 
+// start
 start();

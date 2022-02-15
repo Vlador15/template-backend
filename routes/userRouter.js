@@ -5,11 +5,8 @@ const bcrypt = require("bcrypt");
 const config = require("config");
 const { check, validationResult } = require("express-validator");
 
+// controllers
 const userController = require("../controllers/userControllers");
-
-router.use("/test", (req, res) => {
-  res.json({ message: "Hello" });
-});
 
 router.post(
   "/user/add",
@@ -23,9 +20,7 @@ router.post(
 );
 
 router.get("/user/find/:q", userController.findUser);
-
 router.get("/user/id/:id", userController.getById);
-
 router.get("/users", userController.getUsers);
 
 module.exports = router;
