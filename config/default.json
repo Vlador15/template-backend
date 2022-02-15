@@ -1,0 +1,5 @@
+{
+  "port" : 5001,  
+  "secretKey": "secket-key-spectradev", 
+  "database": ""
+}
