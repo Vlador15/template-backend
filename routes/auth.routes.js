@@ -1,8 +1,6 @@
 const Router = require("express");
 const router = new Router();
-const config = require("config");
 const { check, validationResult } = require("express-validator");
-const authMiddleware = require("../middleware/auth.middleware");
 
 // schemas
 const Users = require("../models/Users");
